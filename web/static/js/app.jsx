@@ -352,9 +352,7 @@ var PluginPage = React.createClass({
 
   render: function() {
     if (!this.state.slug) {
-      return <div className="plugin-page">
-        <Spinner />
-      </div>;
+      return <NotFound />;
     }
 
     // TODO(david): Need to also scrape the link to the archive download (for
